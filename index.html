@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+
+    <title>Slot Check</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark static-top">
+      <div class="container">
+        <a class="navbar-brand" href="#">Slot Check</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarResponsive"
+          aria-controls="navbarResponsive"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#"
+                >Home
+                <span class="sr-only">(current)</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Help</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Page Content -->
+    <div class="container">
+      <div class="row">
+        <br /><br />
+        <div class="col-lg-12 text-center m-n1">
+          <div class="alert alert-secondary fade show m-md-5" role="alert">
+            <strong>DEMO MODE: </strong>Slot range available for lookup is
+            BP-101-1 to BP-114-1
+          </div>
+          <div class="form-group">
+            <input
+              class="form-control form-control-lg"
+              name="slot_number"
+              type="text"
+              placeholder="ENTER SLOT HERE"
+              id="slot_number"
+            />
+            <br />
+            <button
+              type="button"
+              name="search"
+              id="search"
+              class="btn btn-primary btn-lg"
+            >
+              Check
+            </button>
+          </div>
+
+          <div class="table-responsive" id="slot_details" style="display:none">
+            <table class="table table-bordered">
+              <tr>
+                <td width="10%" align="right"><b>Slot</b></td>
+                <td width="90%" align="left"><span id="item_slot"></span></td>
+              </tr>
+              <tr>
+                <td width="10%" align="right"><b>Item</b></td>
+                <td width="90%" align="left"><span id="item_number"></span></td>
+              </tr>
+
+              <tr>
+                <td width="10%" align="right"><b>Description</b></td>
+                <td width="90%" align="left">
+                  <span id="item_description"></span>
+                </td>
+              </tr>
+              <tr>
+                <td width="10%" align="right"><b>Inventory</b></td>
+                <td width="90%" align="left">
+                  <span id="item_inventory"></span>
+                </td>
+              </tr>
+              <tr>
+                <td width="10%" align="right"><b>On Order</b></td>
+                <td width="90%" align="left"><span id="item_order"></span></td>
+              </tr>
+              <tr>
+                <td width="10%" align="right"><b>Movement</b></td>
+                <td width="90%" align="left">
+                  <span id="item_movement"></span>
+                </td>
+              </tr>
+              <tr>
+                <td width="10%" align="right"><b>TI/HI</b></td>
+                <td width="90%" align="left"><span id="item_tihi"></span></td>
+              </tr>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- JavaScript -->
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
